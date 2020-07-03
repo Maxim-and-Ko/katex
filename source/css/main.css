@@ -1,0 +1,96 @@
+/* шапка */
+.header {
+    margin-top: 50px;
+}
+.logotype-image {
+    max-width: 90%;
+}
+.menu {
+    margin-top: 7px;
+    text-align: center;
+}
+.menu-button {
+    margin-left: 10px;
+    background: none;
+    border-radius: 30px;
+    border:none;
+    outline: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.33);
+    border-color: #fff;
+    font-family: KatexMedium;
+    font-size: 35px;
+    transition: 0.5s;
+    padding: 4px 20px;
+    color: #a9a9a9;
+}
+.menu-button:active, .menu-button:focus {
+    outline: none !important;
+      
+}
+.menu-button:hover {
+    background: #ffcc00;
+    color: #112742;
+      
+}
+#active {
+    color: #112742;
+}
+.phone {
+    margin-top: 10px;
+    font-family: KatexNumbers;
+    font-size: 35px;
+    color: #112742;
+}
+
+.header-contacts {
+    position: absolute;
+    top: 50px;
+    right: 1%;
+    width: 38px;
+    text-align: center;
+}
+.mediaicon {
+    margin-bottom: 40px;
+    color: #112742;
+    transition: 0.2s;
+}
+.mediaicon:hover {
+
+    color: #fff;
+}
+
+/* ПОДВАЛ */
+
+.footer {
+    padding-top: 83px ;
+    background: #ffcc00;
+    width: 100%;
+    padding-bottom: 58px;
+    z-index: -10;
+}
+.footer-link {
+    text-decoration: none;
+    color: #112742;
+    font-size: 35px;
+    font-family: KatexMedium;
+    margin-left: 20px;
+    transition: 0.2s;
+
+}
+.footer-link:hover {
+    color: white;
+    text-decoration:none;
+}
+.footer-contacts {
+    padding-top: 10px;
+} 
+.mediaicon_f {
+    margin-right: 15px;
+    color: #112742;
+    transition: 0.2s;
+    font-size: 20px;
+}
+.mediaicon_f:hover {
+
+    color: #fff;
+}

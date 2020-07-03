@@ -1,0 +1,20 @@
+@font-face {
+    font-family: KatexLight;
+    src: url('/source/fonts/Light.ttf');
+}
+@font-face {
+    font-family: KatexMedium;
+    src: url('/source/fonts/Medium.otf');
+}
+@font-face {
+    font-family: KatexBold;
+    src: url('/source/fonts/Bold.otf');
+}
+@font-face {
+    font-family: KatexBlackBold;
+    src: url('/source/fonts/BlackBold.otf');
+}
+@font-face {
+    font-family: KatexNumbers;
+    src: url('/source/fonts/Numbers.ttf');
+}

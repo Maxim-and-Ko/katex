@@ -1,1 +1,72 @@
-123
+
+
+/* Блок 1 */
+.block1 {
+    text-align: center;
+}
+.block1-desc {
+
+    max-width: 70%;
+    margin-top: 40px;
+}
+
+.block1-bg {
+    position: absolute;
+    max-width: 100%;
+    z-index: -90;
+    top:0;
+    left:0;
+}
+
+/* Блок 2 */
+.block2 {
+    background: #ffcc00;
+    text-align:center;
+}
+.block2 h3 {
+    padding-top: 43px;
+    font-family: KatexMedium;
+}
+.boldheader {
+    padding-top: 40px;
+    font-family: KatexBold;
+}
+.features-list {
+    margin-top: 60px;
+    font-family: KatexMedium;
+}
+.block2-featureimage {
+    width: 80%;
+}
+
+.block3 {
+    background: #fff;
+    color: #112742;
+    text-align:center;
+}
+.block4 {
+    margin-top: 160px;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+.block4-bg {
+    position:absolute;
+    max-width: 100%;
+    z-index: -90;
+    bottom: -10px;
+    left:0;
+}
+
+.block4-desc {
+    max-width: 80%;
+    transform: translate(0,30px);
+    z-index: 10;
+}
+.block4-shadow {
+    max-width: 100%;
+}
+.abouttext {
+    font-family: Bold;
+}
+
