@@ -1,0 +1,107 @@
+.block1 {
+    display: inline-block;
+    font-family: KatexMedium;
+    width: 100%;
+}
+
+.biglp {
+    vertical-align: middle;
+}
+.biglp-image {
+    
+    width: 60%;
+    vertical-align: middle;
+}
+
+.configer {
+    /* width: 470px !important; */
+     /* width: 50%;  */
+    text-align: center;
+    
+}
+
+    .deviceactive {
+        border-bottom: 2px solid #ffcc00;
+
+    }
+    .config_icon1 {
+        padding-top: 10px;
+        max-width: 70%;
+        max-height: 70px;
+        padding-bottom: 10px;
+    }
+    .config_icon2 {
+        max-width: 70%;
+        max-height: 60px;
+    }
+    .config_icon3 {
+        padding-top: 20px;
+        max-width: 70%;
+        max-height: 70px;
+    }
+    .config_icon4 {
+        max-width: 70%;
+        max-height: 60px;
+        padding-bottom: 10px;
+    }
+.block1-bg {
+    position: absolute;
+    max-width: 100%;
+    z-index: -10;
+    top: 0;
+    left: 0;
+}
+
+.block1-hr {
+    
+    box-shadow: 0 5px 12px black;
+}
+
+
+.katex-label {
+    cursor: pointer;
+}
+.price {
+    font-family: KatexNumbers;
+}
+
+.block2 {
+    font-family: Medium;
+}
+
+.block2-center {
+    background: #d4dadf;
+    text-align:center;
+    padding-top: 50px;
+
+}
+.block2-end_content {
+    padding: 0 10%;
+    position:absolute;
+    text-align: center;
+}
+.block2-end {
+    width: 100%;
+}
+
+.block3 {
+    position: relative;
+}
+.block3-desc {
+    width: 60%;
+    right: 0;
+    bottom: -30px;
+    position:absolute;
+}
+.block3-text1 {
+    max-width: 90%;
+
+}
+.block3-text2 {
+    max-width: 43%;
+
+}
+.description_text {
+    font-size: 15px;
+    font-family: KatexMedium;
+}
