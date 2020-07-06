@@ -30,6 +30,7 @@
             </div>
         </div>
     </div>
+
     <div class="header-contacts">
         <i class="fab fa-facebook-f mediaicon"></i>
         <i class="fa fa-youtube mediaicon" aria-hidden="true"></i>
@@ -56,16 +57,33 @@
             <img class="block1-desc" src="media/cases-images/block1-desc.png" alt="Desc">
             <div class="block1-calculator_content">
                 <h3 style="color: white;" class="boldheader">СДЕЛАТЬ РАСЧЁТ</h3>
-                <br>
-                <div class="pcs">
-                    <input type="range" min="1" max="100" value="50" id="slider">
 
-                    <div id="selector">
-                        <div class="selectBtn"></div>
-                        <div id="selectValue"></div>
+                <br>
+
+                <div class="pcs">
+                    <div id="prog1">
+                        <input type="range" min="1" max="100" value="50" id="progress1">
+
+                        <div id="selector1">
+                            <div id="selectBtn1"></div>
+                            <div id="selectValue1"></div>
+                        </div>
+
+                        <div id="progressBar1"></div>
                     </div>
 
-                    <div id="progressBar"></div>
+                    <br>
+
+                    <div id="prog2">
+                        <input type="range" min="1" max="100" value="50" id="progress2">
+
+                        <div id="selector2">
+                            <div id="selectBtn2"></div>
+                            <div id="selectValue2"></div>
+                        </div>
+
+                        <div id="progressBar2"></div>
+                    </div>
                 </div>
             </div>  
         </div>
@@ -88,7 +106,6 @@
     <div class="block3">
         <h3 class="boldheader">Клиенты</h3>
     </div>
-
 
     <div class="footer">
         <div class="container">
@@ -113,21 +130,7 @@
 
 
 
-    <script>
-        const $ = (id) => document.getElementById(id)
-        const slider = $('slider')
-        const selector = $('selector')
-        const selectValue = $('selectValue')
-        const progressBar = $('progressBar')
-    
-        selectValue.innerHTML = slider.value
-    
-        slider.oninput = function() {
-            selectValue.innerHTML = slider.value
-            selector.style.left = this.value + '%';
-            progressBar.style.width = this.value + '%';
-        } 
-    </script>
+    <script src="source/js/progress_bar.js"></script>
     <script src="source/bootstrap/bootstrap.min.js"></script>
     <script src="source/js/anim_btn.js"></script>
 </body>
