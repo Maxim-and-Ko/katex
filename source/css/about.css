@@ -16,12 +16,19 @@
     z-index: -90;
     top:0;
     left:0;
-}
 
+}
+.block1-bg_mobail {
+    display: none;
+}
 /* Блок 2 */
+.block2_mobile {
+    display: none;
+}
 .block2 {
     background: #ffcc00;
     text-align:center;
+    
 }
 .block2 h3 {
     padding-top: 43px;
@@ -50,6 +57,9 @@
     position: relative;
     z-index: 1;
 }
+.block4-content_mobile {
+    display: none;
+}
 .block4-bg {
     position:absolute;
     max-width: 100%;
@@ -70,3 +80,38 @@
     font-family: Bold;
 }
 
+/* MobileVersion */
+@media (max-width: 768px) { 
+    .block1-bg {
+        display: none;
+    }
+    .block1-bg_mobail {
+        display: unset;
+        position: absolute;
+        max-width: 100%;
+        z-index: -90;
+        top:0;
+        left:0;
+    }
+    .block2 {
+        display: none;
+    }
+    .block2_mobile {
+        display: block;
+        background: white;
+        text-align:center;
+        font-family: KatexMedium;
+        margin-top: 50px;
+    }
+    .features-list {
+        background: #ffcc00;
+
+    }
+    .block4-content {
+        display: none;
+    }
+    .block4-content_mobile {
+        display: block;
+        text-align:center;
+    }
+}

@@ -44,6 +44,10 @@
     z-index: 80;
 }
 
+.menu-folder {
+    display: none;
+}
+
 .header-contacts {
     position: absolute;
     top: 50px;
@@ -206,5 +210,125 @@
     100% {
         background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
         background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+
+
+/* MobileVersion */
+.menu-folder {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    float:right;
+    width: 30px;
+    cursor: pointer;
+}
+#menu-icon,
+#menu-icon:before,
+#menu-icon:after {
+    background: #1d1f20;
+    border-radius: 0.05em;
+    height: 0.2em;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    
+    z-index: 100;
+}
+
+#menu-icon {
+    display: inline-block;
+    margin: 0.4em 0;
+    max-width: 1em;
+    position: relative;
+}
+
+#menu-icon:before,
+#menu-icon:after {
+    content: '';
+    left: 0;
+    position: absolute;
+}
+
+#menu-icon:before {
+    top: -0.4em;
+}
+
+#menu-icon:after {
+    bottom: -0.4em;
+}
+/* Close Icon */
+/* Close Icon */
+.closed #menu-icon {
+    background: transparent;
+}
+
+.closed #menu-icon:before {
+    top: 0;
+    transform: rotate(-45deg);
+    background: #ffcc00;
+}
+
+.closed #menu-icon:after {
+    bottom: 0;
+    transform: rotate(45deg);
+    background: #ffcc00;
+}
+
+.mobile-menu {
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 90;
+    padding: 50px 10% 0 10%;
+    text-align: center;
+}
+.nonvisible {
+    visibility: hidden;
+}
+.mm_logotype-image {
+    max-width: 70%;
+}
+.mm_menu {
+    display: block;
+    margin: 50px 0 50px 0;
+}
+@media (max-width: 768px) { 
+    .menu {
+        display: none;
+    }
+    .phonemenu {
+        display: none;
+    }
+    .header-contacts
+    {
+        display: none;
+    }
+
+    .menu-folder {
+        display: inline-block;
+    }
+
+
+    .footermenu {
+        display: none;
+    }
+    .footer-contacts {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+        margin: 20px auto 0 auto;
+    }
+    .phone {
+        font-size: 40px;
+    }
+    .mediaicon {
+        font-size: 35px;
+        margin-right: 20px;
     }
 }
