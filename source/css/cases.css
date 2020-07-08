@@ -40,19 +40,51 @@
 .block1-calculator_content {
     position: absolute;
     left: 38%;
-    bottom: 40%;
+    bottom: 28%;
+
 }
 /* ProgressBar */
-
+.pcs_title
+{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    font-family: KatexMedium;
+    right: 0;
+    bottom: 10px;
+}
+.servers_title
+{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    font-family: KatexMedium;
+    right: 0;
+    bottom: 10px;
+}
 .pcs {
     display: flex;
     flex-direction: column;
 }
 
 .pcs > * {
-    margin: 10px;
+    margin-top: 40px;
 }
-
+.pcs_result {
+    margin-top: 30px;
+}
+.pcs_result_number {
+    font-size: 60px;
+    color: white;
+    font-family: KatexNumbers;
+    line-height: 20px;
+}
+.pcs_result_desc {
+    font-size: 20px;
+    color: white;
+    font-family: KatexMedium;
+    
+}
 input[type="range"] {
     -webkit-appearance: none;
     width: 100%;
@@ -107,7 +139,7 @@ input[type="range"]::-webkit-slider-thumb {
     width: 48px;
     height: 40px;
     position: absolute;
-    top: 25px;
+    top: 20px;
     text-align: center;
     line-height: 45px;
     font-size: 20px;
