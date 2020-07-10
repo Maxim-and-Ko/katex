@@ -17,6 +17,4 @@
 @font-face {
     font-family: KatexNumbers;
     src: url('../fonts/Numbers.ttf');
-    src: local('O'),
-    url('../source/fonts/Numbers.ttf') format('truetype');
 }
