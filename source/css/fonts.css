@@ -4,15 +4,15 @@
 }
 @font-face {
     font-family: KatexMedium;
-    src: url('../fonts/Medium.otf');
+    src: url('../fonts/Medium.ttf');
 }
 @font-face {
     font-family: KatexBold;
-    src: url('../fonts/Bold.otf');
+    src: url('../fonts/Bold.ttf');
 }
 @font-face {
     font-family: KatexBlackBold;
-    src: url('../fonts/BlackBold.otf');
+    src: url('../fonts/BlackBold.ttf');
 }
 @font-face {
     font-family: KatexNumbers;
