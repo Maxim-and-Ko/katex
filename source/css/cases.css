@@ -14,6 +14,10 @@
     width: 100%;
     
 }
+.block1-desc_mobail {
+    display: none;
+    
+}
 .numberfolder {
     display: inline-block;
 }
@@ -40,9 +44,17 @@
 .block1-calculator_content {
     position: absolute;
     left: 38%;
-    bottom: 28%;
+    bottom: 5%;
 
 }
+.pcs_result_mobail {
+    display: none;
+}
+
+.block1-calculator_mobail {
+    display: none;
+}
+
 /* ProgressBar */
 .pcs_title
 {
@@ -173,6 +185,9 @@ input[type="range"]::-webkit-slider-thumb {
 .block2-desc {
     width: 100%;
 }
+.block2-desc_mobail {
+    display: none;
+}
 .block2-content {
     position: absolute;
     top: 0;
@@ -187,4 +202,96 @@ input[type="range"]::-webkit-slider-thumb {
 
 .block3 {
     text-align: center;
+}
+
+.block1 .katexbutton {
+    margin-top: 15%;
+}
+
+/* MobileVersion */
+@media (max-width: 768px) {
+    .block1-info {
+        position: relative;
+    }
+    .bignumber {
+
+        font-size: 50px;
+
+    }
+    .bignumber_text {
+        text-align: center;
+        font-size: 15px;
+
+    }
+    .block1-calculator_content {
+        position: absolute;
+        left: 30%;
+        bottom: 0;
+    
+    }
+    .block1-desc_mobail {
+        display: block;
+        width: 100%;
+    }
+    .block1-desc {
+        display: none;
+    }
+    .block1-calculator_content .boldheader {
+        font-size: 20px;
+    }
+    .pcs_result {
+        display: none;
+    }
+    .pcs_result_mobail {
+        display: block;
+        text-align: right;
+    }
+    .pcs_result_number {
+        font-size: 30px;
+    }
+    .pcs_result_desc {
+        font-size: 15px;
+    }   
+    .pcs > * {
+        margin-top: 1px;
+    }
+    .servers_title {
+        font-size: 10px;
+    }
+    .pcs_title {
+        font-size: 10px;
+    }
+    #selectValue1, 
+    #selectValue2   {
+        font-size: 15px;
+        line-height: 70px;
+    }
+
+    .block2-desc {
+        display: none;
+    }
+    .block2-desc_mobail {
+        display: block;
+        width: 100%;
+        
+    }
+    .block2-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        height: 26%;
+        overflow-y: hidden;
+    }
+    .block2 .boldheader {
+        font-size: 25px;
+    }
+    .block1 .boldheader {
+        padding-bottom: 15px;
+    }
+    .block1-calculator .katexbutton {
+        font-size: 10px;
+        margin-top: 0;
+    }
 }
