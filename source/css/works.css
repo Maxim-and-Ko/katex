@@ -84,7 +84,10 @@
     padding: 0 10%;
     position:absolute;
     text-align: center;
+    height: 170px;
+    overflow-y: hidden;
 }
+
 .block2-end {
     width: 100%;
 }
@@ -164,6 +167,7 @@
         font-size: 13px;
     }
     .block2 .boldheader {
+        padding-top: 0;
         font-size: 25px;
     }
     .biglp-image_mobail {
