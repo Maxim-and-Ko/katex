@@ -24,10 +24,13 @@
                     <a href="works.html"><button type="button" class="menu-button" id="active">Услуги</button></a>
                     <a href="cases.html"><button type="button" class="menu-button">Кейсы</button></a>
                 </div>
-                <div class="col-3 ">
+                <div class="col-3 phonemenu">
                     <p class="phone">8 4012 525553</p>
                 </div>
             </div>
+        </div>
+        <div id="menu-icon-folder" class="menu-folder" onclick="ViewMobileMenu();"> <!--  Кнопка меню для мобилки -->
+            <span id="menu-icon" ></span>
         </div>
     </div>
     <div class="header-contacts">
@@ -37,8 +40,8 @@
         <i class="fab fa-vk mediaicon"></i>
     </div>
 
-    <div class="block1"> <!-- Конфигуратор ПК -->
-        <div class="container-fluid">
+    <div class="block1"> <!-- Конфигуратор ПК для десткоп -->
+        <div class="container-fluid block1-content">
             <div class="row">
                 <div class="col">
 
@@ -52,18 +55,6 @@
             </div>
             <hr class="block1-hr">
             <div class="row">
-                <!-- <div class="col">
-                    <label class="radio">
-                    <img class="config_laptop" src="media/works-images/laptop.png" alt="Laptop">
-                    <div style="display: flex;">
-                    <div>
-                        <input type="radio" id="radio" name="radio">
-                    </div> 
-                    <div class="radio_text">НАЗВАНИЕ МОНИТОРА</div>
-                    </div>
-                    <p class="price">25 000 P</p>
-                    </label>
-                </div> -->
                 <div class="col">
                     <label class="radio">
                     <img class="config_laptop" src="media/works-images/laptop.png" alt="Laptop">
@@ -143,10 +134,97 @@
                 </div>
             </div>
         </div>
-
+        <div class="block1-content_mobail">
+            <img class="biglp-image_mobail" src="media/works-images/biglaptop_mobail.png" alt="BigLpM">
+            <div class="configer">
+            <h3 class="boldheader">Конфигуратор ПК</h3>
+            <div class="row">
+                <div class="col deviceactive"><img class="config_icon1" src="media/icons/icon_monitor.png" alt="Monitor"></div>
+                <div class="col"><img class="config_icon2" src="media/icons/icon_pc_off.png" alt="Pc"></div>
+                <div class="col"><img class="config_icon3" src="media/icons/icon_keyboard_off.png" alt="Kb"></div>
+                <div class="col"><img class="config_icon4" src="media/icons/icon_disc_off.png" alt="Disc"></div>
+            </div>
+            <hr class="block1-hr">
+            <div class="row">
+                <div class="col">
+                    <label class="radio">
+                    <img class="config_laptop" src="media/works-images/laptop.png" alt="Laptop">
+                    
+                        <input type="radio" id="radio" name="radio">
+                    
+                    <div class="radio_text">НАЗВАНИЕ МОНИТОРА</div>
+                    
+                    <p class="price">25 000 P</p>
+                    </label>
+                </div>
+                <div class="col">
+                    <label class="radio">
+                    <img class="config_laptop" src="media/works-images/laptop.png" alt="Laptop">
+                    
+                        <input type="radio" id="radio" name="radio">
+                    
+                    <div class="radio_text">НАЗВАНИЕ МОНИТОРА</div>
+                    
+                    <p class="price">25 000 P</p>
+                    </label>
+                </div>
+                <div class="col">
+                    <label class="radio">
+                    <img class="config_laptop" src="media/works-images/laptop.png" alt="Laptop">
+                    
+                        <input type="radio" id="radio" name="radio">
+                    
+                    <div class="radio_text">НАЗВАНИЕ МОНИТОРА</div>
+                    
+                    <p class="price">25 000 P</p>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label class="radio">
+                    <img class="config_laptop" src="media/works-images/laptop.png" alt="Laptop">
+                    
+                        <input type="radio" id="radio" name="radio">
+                    
+                    <div class="radio_text">НАЗВАНИЕ МОНИТОРА</div>
+                    
+                    <p class="price">25 000 P</p>
+                    </label>
+                </div>
+                <div class="col">
+                    <label class="radio">
+                    <img class="config_laptop" src="media/works-images/laptop.png" alt="Laptop">
+                    
+                        <input type="radio" id="radio" name="radio">
+                    
+                    <div class="radio_text">НАЗВАНИЕ МОНИТОРА</div>
+                    
+                    <p class="price">25 000 P</p>
+                    </label>
+                </div>
+                <div class="col">
+                    <label class="radio">
+                    <img class="config_laptop" src="media/works-images/laptop.png" alt="Laptop">
+                    
+                        <input type="radio" id="radio" name="radio">
+                    
+                    <div class="radio_text">НАЗВАНИЕ МОНИТОРА</div>
+                    
+                    <p class="price">25 000 P</p>
+                    </label>
+                </div>
+            </div>
+            <p class="price" style="font-size: 40px;">ИТОГО: 95 000 Р</p>
+            <button class="katexbutton">Сформировать ПК</button>
+        </div>
+        </div>
 
         <img class="block1-bg" src="media/works-images/block1-bg.png" alt="Bg">
+        <img class="block1-bg_mobail" src="media/works-images/block1-bg_mobail.png" alt="BgM">
     </div>
+
+
 
     <div class="block2">
         <div class="block2-center">
@@ -176,7 +254,7 @@
 
                 mmodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
             </p>
-            <button style="text-align:center;" class="katexbutton">Сделать расчет</button>
+            <button class="katexbutton">Сделать расчет</button>
         </div>
         <img class="block3-desc" src="media/works-images/block3-desc.png" alt="3Desc">
     </div>
@@ -187,7 +265,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-3"><img class="logotype-image" src="media/logos/footerlogo.png" alt="Logo"></div>
-                <div class="col">
+                <div class="col footermenu">
                     <a class="footer-link" href="about.html">О нас</a>
                     <a class="footer-link" href="works.html">Услуги</a>
                     <a class="footer-link" href="cases.html">Кейсы</a>
@@ -204,10 +282,52 @@
         </div>
     </div>
 
+    <div id="mm" class="mobile-menu nonvisible">
+        <img class="mm_logotype-image" src="media/logos/mainlogo.png" alt="Logo">
+        <div class="mm_menu">
+            <a href="about.html"><button type="button" class="menu-button" id="active">О нас</button></a>
+            <a href="works.html"><button type="button" class="menu-button">Услуги</button></a>
+            <a href="cases.html"><button type="button" class="menu-button">Кейсы</button></a>
+        </div>
+
+            <p class="phone">8 4012 525553</p>
+
+        <i class="fab fa-facebook-f mediaicon"></i>
+        <i class="fa fa-youtube mediaicon" aria-hidden="true"></i>
+        <i class="fab fa-instagram mediaicon"></i>
+        <i class="fab fa-vk mediaicon"></i>
+    </div>
 
 
 
     <script src="source/bootstrap/bootstrap.min.js"></script>
     <script src="source/js/anim_btn.js"></script>
+    <script>
+        function ViewMobileMenu () 
+        {
+            var menu = document.getElementById("mm").classList;
+
+            if (menu.contains("nonvisible")) 
+            {
+                menu.remove("nonvisible");
+            } 
+            else 
+            {
+                menu.add("nonvisible");
+            }
+
+            var menuicon = document.getElementById("menu-icon-folder").classList;
+
+            if (menuicon.contains("closed")) 
+            {
+                menuicon.remove("closed");
+            } 
+            else 
+            {
+                menuicon.add("closed");
+            }
+
+        }
+    </script>
 </body>
 </html>

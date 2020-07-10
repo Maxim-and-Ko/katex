@@ -24,10 +24,13 @@
                     <a href="works.html"><button type="button" class="menu-button">Услуги</button></a>
                     <a href="cases.html"><button type="button" class="menu-button" id="active">Кейсы</button></a>
                 </div>
-                <div class="col-3 ">
+                <div class="col-3 phonemenu">
                     <p class="phone">8 4012 525553</p>
                 </div>
             </div>
+        </div>
+        <div id="menu-icon-folder" class="menu-folder" onclick="ViewMobileMenu();"> <!--  Кнопка меню для мобилки -->
+            <span id="menu-icon" ></span>
         </div>
     </div>
 
@@ -38,7 +41,7 @@
         <i class="fab fa-vk mediaicon"></i>
     </div>
 
-    <div class="block1"> <!-- Конфигуратор ПК -->
+    <div class="block1"> 
         <img class="block1-bg" src="media/cases-images/block1-bg.png" alt="Bg">
         <div class="container-fluid block1-info">
             <h1 class="boldheader">IT-аутсорсинг</h1>
@@ -50,11 +53,11 @@
                     <div class="bignumber">587</div><div class="bignumber_text">ОБСЛУЖИВАЕТСЯ<br>СЕРВЕРОВ</div>
                 </div>
             </div>
-            <!--  -->
         </div>
 
-        <div class="block1-calculator">
+        <div class="block1-calculator"> <!-- Калькулятор для десткопа -->
             <img class="block1-desc" src="media/cases-images/block1-desc.png" alt="Desc">
+            <img class="block1-desc_mobail" src="media/cases-images/block1-desc_mobail.png" alt="Desc">
             <div class="block1-calculator_content">
                 
 
@@ -89,24 +92,38 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="pcs_result">
+                        <div class="col pcs_result">
                                 <p class="pcs_result_number">15000</p> 
                                 <p class="pcs_result_desc">СТОИМОСТЬ ЗА МЕСЯЦ ОБСЛУЖИВАНИЯ</p>
-                            </div>
                         </div>
+                    </div>
+                    <div class="pcs_result_mobail">
+                        <p class="pcs_result_number">15000</p> 
+                        <p class="pcs_result_desc">СТОИМОСТЬ ЗА МЕСЯЦ ОБСЛУЖИВАНИЯ</p>
                     </div>
                 </div>
                 
-                
+                <button class="katexbutton">Сделать расчёт</button>
             </div>  
+            
         </div>
         
-        
+        <!-- <div class="block1-calculator_mobail"> 
+            <img class="block1-desc" src="media/cases-images/block1-desc_mobail.png" alt="Desc">
+            <div class="block1-calculator_content">
+                <h3 style="color: white;" class="boldheader">СДЕЛАТЬ РАСЧЁТ</h3>
+                <input type="range" min="1" max="100" value="50" id="progress1">
+                
+
+
+            </div>
+        </div> -->
+
     </div>
 
     <div class="block2">
         <img class="block2-desc" src="media/cases-images/block2-desc.png" alt="Desc2">
+        <img class="block2-desc_mobail" src="media/cases-images/block2-desc_mobail.png" alt="Desc2M">
         <div class="block2-content">
             <h3 class="boldheader">Серверное оборудование</h3>
             <p class="block2-content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea co mmodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
@@ -125,7 +142,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-3"><img class="logotype-image" src="media/logos/footerlogo.png" alt="Logo"></div>
-                <div class="col">
+                <div class="col footermenu">
                     <a class="footer-link" href="about.html">О нас</a>
                     <a class="footer-link" href="works.html">Услуги</a>
                     <a class="footer-link" href="cases.html">Кейсы</a>
@@ -142,10 +159,52 @@
         </div>
     </div>
 
+    <div id="mm" class="mobile-menu nonvisible">
+        <img class="mm_logotype-image" src="media/logos/mainlogo.png" alt="Logo">
+        <div class="mm_menu">
+            <a href="about.html"><button type="button" class="menu-button" id="active">О нас</button></a>
+            <a href="works.html"><button type="button" class="menu-button">Услуги</button></a>
+            <a href="cases.html"><button type="button" class="menu-button">Кейсы</button></a>
+        </div>
 
+            <p class="phone">8 4012 525553</p>
+
+        <i class="fab fa-facebook-f mediaicon"></i>
+        <i class="fa fa-youtube mediaicon" aria-hidden="true"></i>
+        <i class="fab fa-instagram mediaicon"></i>
+        <i class="fab fa-vk mediaicon"></i>
+    </div>
 
     <script src="source/js/progress_bar.js"></script>
     <script src="source/bootstrap/bootstrap.min.js"></script>
     <script src="source/js/anim_btn.js"></script>
+
+    <script>
+        function ViewMobileMenu () 
+        {
+            var menu = document.getElementById("mm").classList;
+
+            if (menu.contains("nonvisible")) 
+            {
+                menu.remove("nonvisible");
+            } 
+            else 
+            {
+                menu.add("nonvisible");
+            }
+
+            var menuicon = document.getElementById("menu-icon-folder").classList;
+
+            if (menuicon.contains("closed")) 
+            {
+                menuicon.remove("closed");
+            } 
+            else 
+            {
+                menuicon.add("closed");
+            }
+
+        }
+    </script>
 </body>
 </html>
