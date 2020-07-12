@@ -13,40 +13,27 @@ window.onload = async function() {
     document.getElementsByTagName('head')[0].innerHTML = styles
 }
 
-window.resize = function() {
-    pages()
-}
+window.resize = () => pages()
 
 function pages() {
+    const f = async function(event, path_to_page, path_to_styles) {
+        event.preventDefault()
+        const page = await loadPage(path_to_page)
+        const styles = await loadPage(path_to_styles)
+    
+        $('load_zone').innerHTML = page
+        document.getElementsByTagName('head')[0].innerHTML = styles
+    }
+
+
     // подгрузка о нас
-    $('about').addEventListener('click', async e => {
-        e.preventDefault()
-        const page = await loadPage('source/pages/main/about.php')
-        const styles = await loadPage('source/pages/side/about_head.php')
+    $('about').addEventListener('click', async event => f(event, 'source/pages/main/about.php', 'source/pages/side/about_head.php'))
+    $('works').addEventListener('click', async event => f(event, 'source/pages/main/works.php', 'source/pages/side/works_head.php'))
+    $('cases').addEventListener('click', async event => f(event, 'source/pages/main/cases.php', 'source/pages/side/cases_head.php'))
     
-        $('load_zone').innerHTML = page
-        document.getElementsByTagName('head')[0].innerHTML = styles
-    })
-    
-    // подгрузка услуги
-    $('works').addEventListener('click', async e => {
-        e.preventDefault()
-        const page = await loadPage('source/pages/main/works.php')
-        const styles = await loadPage('source/pages/side/works_head.php')
-    
-        $('load_zone').innerHTML = page
-        document.getElementsByTagName('head')[0].innerHTML = styles
-    })
-    
-    // подгрущка кейсы
-    $('cases').addEventListener('click', async e => {
-        e.preventDefault()
-        const page = await loadPage('source/pages/main/cases.php')
-        const styles = await loadPage('source/pages/side/cases_head.php')
-    
-        $('load_zone').innerHTML = page
-        document.getElementsByTagName('head')[0].innerHTML = styles
-    })
+    $('about_f').addEventListener('click', async event => f(event, 'source/pages/main/about.php', 'source/pages/side/about_head.php'))
+    $('works_f').addEventListener('click', async event => f(event, 'source/pages/main/works.php', 'source/pages/side/works_head.php'))
+    $('cases_f').addEventListener('click', async event => f(event, 'source/pages/main/cases.php', 'source/pages/side/cases_head.php'))
 }
 
 pages()
